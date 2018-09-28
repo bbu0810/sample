@@ -315,6 +315,8 @@ public class HomeActivity extends AppCompatActivity {
         protected String doInBackground(String... strings) {
             try{
                 url = new URL("http://thepicvox.com/websuperboy/fetch.php?barcode_id=" + strings[0]);
+
+ //               url = new URL("http://open.honeymotors.net/connectme.asmx/SELECT_STOCKLIST_MOBILE?YEAR_min=&YEAR_max=&Milage_min=30000&Milage_max=80000&Cost_min=12000&Cost_max=18000&BodyType=Saloon,SUV&BrandName=Toyota&FreeText=Saloon%202018");
                 //url = new URL("http://thepicvox.com/websuperboy/fetch.php?barcode_id=94917567");
                 // Setup HttpURLConnection class to send and receive data from php and mysql
                 conn = (HttpURLConnection) url.openConnection();
